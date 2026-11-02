@@ -1,0 +1,15 @@
+[
+  {"name": "fn_get_time", "description": "Return the current time. Takes no arguments.", "parameters": {}, "returns": {"type": "string"}},
+  {"name": "fn_translate", "description": "Translate a text into a target language.",
+   "parameters": {"text": {"type": "string"}, "language": {"type": "string"}}, "returns": {"type": "string"}},
+  {"name": "fn_translate_to_english", "description": "Translate a text into English.",
+   "parameters": {"text": {"type": "string"}}, "returns": {"type": "string"}},
+  {"name": "fn_convert_currency", "description": "Convert an amount of money from one currency code to another.",
+   "parameters": {"amount": {"type": "number"}, "from_currency": {"type": "string"}, "to_currency": {"type": "string"}}, "returns": {"type": "number"}},
+  {"name": "fn_create_user", "description": "Create a user account with a username, an age and an admin flag.",
+   "parameters": {"username": {"type": "string"}, "age": {"type": "integer"}, "is_admin": {"type": "boolean"}}, "returns": {"type": "boolean"}},
+  {"name": "fn_write_file", "description": "Write some content to a file path.",
+   "parameters": {"path": {"type": "string"}, "content": {"type": "string"}}, "returns": {"type": "boolean"}},
+  {"name": "fn_factorial", "description": "Compute the factorial of a non-negative integer.",
+   "parameters": {"n": {"type": "integer"}}, "returns": {"type": "integer"}}
+]

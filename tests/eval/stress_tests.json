@@ -1,0 +1,14 @@
+[
+  {"prompt": "What time is it?", "expected": {"name": "fn_get_time", "parameters": {}}},
+  {"prompt": "Translate 'bonjour le monde' into Spanish", "expected": {"name": "fn_translate", "parameters": {"text": "bonjour le monde", "language": "Spanish"}}},
+  {"prompt": "Translate 'guten Morgen' to English", "expected": {"name": "fn_translate_to_english", "parameters": {"text": "guten Morgen"}}},
+  {"prompt": "Convert 99.99 USD to EUR", "expected": {"name": "fn_convert_currency", "parameters": {"amount": 99.99, "from_currency": "USD", "to_currency": "EUR"}}},
+  {"prompt": "How many yen is 123456789012 dollars? (USD to JPY)", "expected": {"name": "fn_convert_currency", "parameters": {"amount": 123456789012, "from_currency": "USD", "to_currency": "JPY"}}},
+  {"prompt": "Create an admin account for user 'root_42' aged 30", "expected": {"name": "fn_create_user", "parameters": {"username": "root_42", "age": 30, "is_admin": true}}},
+  {"prompt": "Register a regular (non-admin) user named Zoë who is 17", "expected": {"name": "fn_create_user", "parameters": {"username": "Zoë", "age": 17, "is_admin": false}}},
+  {"prompt": "Write 'He said \"hi\" 🙂' to the file /tmp/out.txt", "expected": {"name": "fn_write_file", "parameters": {"path": "/tmp/out.txt", "content": "He said \"hi\" 🙂"}}},
+  {"prompt": "Save the text 'C:\\Users\\me' into notes.txt", "expected": {"name": "fn_write_file", "parameters": {"path": "notes.txt", "content": "C:\\Users\\me"}}},
+  {"prompt": "What is 20 factorial?", "expected": {"name": "fn_factorial", "parameters": {"n": 20}}},
+  {"prompt": "Compute 0!", "expected": {"name": "fn_factorial", "parameters": {"n": 0}}},
+  {"prompt": "I'd like to know the clock time right now please", "expected": {"name": "fn_get_time", "parameters": {}}}
+]

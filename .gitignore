@@ -1,0 +1,25 @@
+# Generated output
+data/output/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+
+# Local copy of the raw subject attachments
+attachments_project_ai/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

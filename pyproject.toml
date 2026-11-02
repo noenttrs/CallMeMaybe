@@ -1,0 +1,36 @@
+[project]
+name = "call-me-maybe"
+version = "1.0.0"
+description = "Function calling with constrained decoding on a small LLM"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pydantic>=2.6",
+    "llm-sdk",
+]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.0",
+    "mypy>=1.10",
+    "pytest>=8.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+llm-sdk = { path = "llm_sdk" }
+
+[tool.mypy]
+exclude = ["^llm_sdk/", "^attachments_project_ai/", "^\\.venv/"]
+
+# llm_sdk is provided as-is (untyped, imports torch): do not analyse it.
+[[tool.mypy.overrides]]
+module = ["llm_sdk", "llm_sdk.*"]
+follow_imports = "skip"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
