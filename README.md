@@ -275,8 +275,7 @@ $ uv run python -m src --functions_definition tests/eval/stress_functions.json \
 ### Use of AI
 
 An AI coding assistant was used during this project to:
-read the subject and propose a module layout; write first versions of the
-code, tests and this README; and debug accuracy problems (it ran the
+read the subject and propose a module layout; write versions of tests and this README; and debug accuracy problems (it ran the
 experiments that found the token-boundary issues described above). Every
 part was then reviewed, tested and explained so that it can be modified
 by hand during the evaluation. Design choices and final measurements were
